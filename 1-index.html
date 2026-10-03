@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nishan Giri — Full Stack Developer</title>
+<meta name="description" content="Portfolio of Nishan Giri, Full Stack Developer and B.E. CSE student at BMSIT, Bangalore.">
+<meta name="theme-color" content="#050505">
+<!-- Planned GitHub Pages URL. Update if the canonical host changes. -->
+<link rel="canonical" href="https://nishan9-99.github.io/">
+<meta property="og:title" content="Nishan Giri — Full Stack Developer">
+<meta property="og:description" content="Web apps, gaming and content creation by Nishan Giri, B.E. CSE @ BMSIT Bangalore.">
+<meta property="og:type" content="website">
+<!-- Absolute image URL for previews after deployment. -->
+<meta property="og:image" content="https://nishan9-99.github.io/assets/about-portrait.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nishan Giri — Full Stack Developer">
+<meta name="twitter:description" content="Web apps, gaming and content creation by Nishan Giri, B.E. CSE @ BMSIT Bangalore.">
+<meta name="twitter:image" content="https://nishan9-99.github.io/assets/about-portrait.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23050505'/%3E%3Ctext x='32' y='43' font-size='30' font-weight='700' text-anchor='middle' fill='%23A78BFA' font-family='Arial'%3ENG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=13f">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Nishan Giri","jobTitle":"Full Stack Developer",
+ "affiliation":{"@type":"CollegeOrUniversity","name":"BMSIT, Bangalore"},
+ "address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"IN"},
+ "url":"https://github.com/nishan9-99",
+ "sameAs":["https://github.com/nishan9-99","https://www.linkedin.com/in/nishan-giree-264700339"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#home">Skip to content</a>
+
+<!-- preloader -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-inner"><span class="pre-ng">NG</span><span class="pre-line"><i></i></span></div>
+</div>
+<div class="scrollbar-progress" id="scrollbarProgress" aria-hidden="true"></div>
+
+<canvas id="stars" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+<div id="cursor" aria-hidden="true"></div>
+<div id="cursorRing" aria-hidden="true"></div>
+
+<!-- ============ NAV (State A: top bar) ============ -->
+<header class="nav" id="nav">
+  <a class="logo" href="#home">NISHAN&nbsp;GIRI</a>
+  <nav class="links" aria-label="Primary" id="topLinks">
+    <a href="#home" class="active" data-scramble>Home</a>
+    <a href="#about" data-scramble>About</a>
+    <a href="#projects" data-scramble>Projects</a>
+    <a href="#skills" data-scramble>Skills</a>
+    <a href="#contact" data-scramble>Contact</a>
+  </nav>
+  <div class="nav-right">
+    <a class="icon-btn" href="https://github.com/nishan9-99" target="_blank" rel="noopener" aria-label="GitHub profile">
+      <svg viewBox="0 0 24 24" style="fill:currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17.2 4.9 18.2 5.2 18.2 5.2c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.6.8.5A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+    </a>
+    <a class="resume-btn magnetic" href="assets/resume.pdf" download="Nishan-Giri-Resume.pdf">Resume
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16"/></svg>
+    </a>
+    <button id="burger" class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============ NAV (State B: right rail) ============ -->
+<nav class="rail" id="railNav" aria-label="Section shortcuts">
+  <a href="#home" data-tip="Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m3 11 9-8 9 8v9a2 2 0 0 1-2 2h-4v-7h-6v7H5a2 2 0 0 1-2-2z"/></svg><span class="tip">Home</span></a>
+  <a href="#about" data-tip="About"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg><span class="tip">About</span></a>
+  <a href="#projects" data-tip="Projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7a2 2 0 0 1 2-2h4l2 3h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><span class="tip">Projects</span></a>
+  <a href="#skills" data-tip="Skills"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg><span class="tip">Skills</span></a>
+  <a href="#contact" data-tip="Contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span class="tip">Contact</span></a>
+  <a href="assets/resume.pdf" download="Nishan-Giri-Resume.pdf" data-tip="Resume" class="rail-resume"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16"/></svg><span class="tip">Resume</span></a>
+</nav>
+
+<button id="floatMenu" class="float-menu" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a>
+  <a href="#skills">Skills</a><a href="#contact">Contact</a>
+</div>
+
+<main id="main">
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <span class="hero-rail" aria-hidden="true"></span>
+  <div class="hero-social" aria-label="Social links" id="heroSocial"></div>
+
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="badge reveal"><span class="pulse"></span>Available for work</p>
+      <h1 class="hero-title" aria-label="Hello, I'm Nishan Giri"><span class="hello" aria-hidden="true">Hello, I'm</span><span class="name-letters" id="heroName" aria-hidden="true">NISHAN GIRI</span></h1>
+      <p class="role-line reveal">I'm a <span class="typed" id="typedRole"></span><span class="caret" aria-hidden="true">|</span></p>
+      <p class="hero-sub reveal">I build modern web applications and turn ideas into real, functional products.</p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn primary magnetic">View My Projects
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        <a href="#contact" class="btn ghost magnetic">Contact Me</a>
+      </div>
+      <div class="hero-stats reveal" id="heroStats"></div>
+    </div>
+
+    <div class="hero-cards reveal">
+      <div class="code-card">
+        <div class="code-head">
+          <span class="dot dr"></span><span class="dot dy"></span><span class="dot dg"></span>
+          <span class="code-file">nishan.js</span>
+        </div>
+        <pre class="code-body"><code><span class="tk">const</span> <span class="tv">nishan</span> <span class="tp">=</span> <span class="tp">{</span>
+  <span class="tk2">role</span><span class="tp">:</span> <span class="ts">"Full-Stack Developer"</span><span class="tp">,</span>
+  <span class="tk2">stack</span><span class="tp">:</span> <span class="tp">[</span><span class="ts">"PHP"</span><span class="tp">,</span> <span class="ts">"MySQL"</span><span class="tp">,</span> <span class="ts">"Docker"</span><span class="tp">],</span>
+  <span class="tk2">college</span><span class="tp">:</span> <span class="ts">"BMSIT, Bangalore"</span><span class="tp">,</span>
+  <span class="tk2">hobbies</span><span class="tp">:</span> <span class="tp">[</span>
+    <span class="ts">"Gaming"</span><span class="tp">,</span>
+    <span class="ts">"Photo editing"</span><span class="tp">,</span>
+    <span class="ts">"Video editing"</span>
+  <span class="tp">],</span>
+  <span class="tk2">openToWork</span><span class="tp">:</span> <span class="tb">true</span>
+<span class="tp">};</span><span class="code-caret" aria-hidden="true"></span></code></pre>
+      </div>
+
+      <div class="player-card">
+        <div class="pc-top">
+          <div class="pc-avatar">NG</div>
+          <div class="pc-id">
+            <b>Player One</b>
+            <span>Class: Developer / Gamer / Editor</span>
+          </div>
+          <div class="pc-level">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 12h4m-2-2v4m7-3h.01M18 13h.01M17.3 5H6.7a4 4 0 0 0-4 3.6L2 16a2.5 2.5 0 0 0 4.4 1.6L8 15h8l1.6 2.6A2.5 2.5 0 0 0 22 16l-.7-7.4a4 4 0 0 0-4-3.6z"/></svg>
+            Level 2+
+          </div>
+        </div>
+        <div class="pc-stats">
+          <div class="pc-row"><span class="pc-label">Coding</span><span class="pc-bar"><i style="--v:88%"></i></span></div>
+          <div class="pc-row"><span class="pc-label">Gaming</span><span class="pc-bar"><i style="--v:95%"></i></span></div>
+          <div class="pc-row"><span class="pc-label">Photo editing</span><span class="pc-bar"><i style="--v:80%"></i></span></div>
+          <div class="pc-row"><span class="pc-label">Video editing</span><span class="pc-bar"><i style="--v:75%"></i></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="beam" aria-hidden="true"></div>
+  <div class="about-grid">
+    <div class="about-copy">
+      <p class="kicker reveal">// ABOUT ME</p>
+      <h2 class="reveal" data-scramble-once>Turning Ideas Into Digital Reality</h2>
+      <p class="reveal">I'm a B.E. CSE student at BMSIT, Bangalore with a passion for full stack development, software engineering, and creating impactful digital experiences. I enjoy building web applications, exploring new technologies, and working on creative projects like gaming and content creation.</p>
+      <div class="chips reveal">
+        <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 10 12 5 2 10l10 5 10-5zM6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg><div><b>B.E. CSE</b><span>BMSIT, Bangalore</span></div></div>
+        <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg><div><b>Full Stack</b><span>Development</span></div></div>
+        <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M3.6 9h16.8M3.6 15h16.8M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/></svg><div><b>Web</b><span>Development</span></div></div>
+        <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 12h4m-2-2v4m7-3h.01M18 13h.01M17.3 5H6.7a4 4 0 0 0-4 3.6L2 16a2.5 2.5 0 0 0 4.4 1.6L8 15h8l1.6 2.6A2.5 2.5 0 0 0 22 16l-.7-7.4a4 4 0 0 0-4-3.6z"/></svg><div><b>Gaming &amp;</b><span>Content Creation</span></div></div>
+      </div>
+      <p class="signature reveal">Nishan Giri</p>
+    </div>
+    <div class="about-art reveal">
+      <picture><source srcset="assets/about-portrait.webp" type="image/webp"><img src="assets/about-portrait.jpg" alt="Illustration of Nishan seen from behind, gazing at the ocean under a violet moonlit night sky" width="1122" height="1402" loading="lazy"></picture>
+      <span class="vert v1">LEARN</span><span class="vert v2">BUILD</span>
+      <span class="vert v3">CREATE</span><span class="vert v4">GROW</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOURNEY ============ -->
+<section class="journey" id="journey">
+  <div class="sec-head center">
+    <p class="kicker reveal">// THE JOURNEY</p>
+    <h2 class="reveal" data-scramble-once>How I Got Here</h2>
+  </div>
+  <div class="timeline" id="timeline"></div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="projects" id="projects">
+  <div class="sec-head">
+    <div>
+      <p class="kicker reveal">// PROJECTS</p>
+      <h2 class="reveal" data-scramble-once>My Work &amp; Creations</h2>
+      <p class="sec-sub reveal">Here are some of the key projects I've worked on.</p>
+    </div>
+    <a class="btn ghost sm magnetic reveal" href="https://github.com/nishan9-99?tab=repositories" target="_blank" rel="noopener">View All Projects
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+  </div>
+  <div class="filters reveal" id="filters" role="tablist" aria-label="Filter projects">
+    <button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+    <button class="filter" data-filter="web" role="tab" aria-selected="false">Web</button>
+    <button class="filter" data-filter="creative" role="tab" aria-selected="false">Creative</button>
+  </div>
+  <div class="proj-row">
+    <button class="proj-nav prev" aria-label="Previous project"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg></button>
+    <div class="proj-track" id="projTrack"></div>
+    <button class="proj-nav next" aria-label="Next project"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></button>
+  </div>
+  <div class="proj-dots" id="projDots" aria-hidden="true"></div>
+</section>
+
+<!-- marquee -->
+<div class="marquee" aria-hidden="true"><div class="marquee-track" id="marqueeTrack"></div></div>
+
+<!-- ============ SKILLS ============ -->
+<section class="skills" id="skills">
+  <div class="code-float" aria-hidden="true">
+    <span>&lt;code&gt;</span><span>learn()</span><span>build()</span><span>repeat()</span><span>&lt;/code&gt;</span>
+  </div>
+  <div class="skills-layout">
+    <div class="skills-main">
+      <div class="sec-head"><div>
+        <p class="kicker reveal">// SKILLS</p>
+        <h2 class="reveal" data-scramble-once>Technologies I Work With</h2>
+        <p class="sec-sub reveal">Here are the tools and technologies I use to bring ideas to life.</p>
+      </div></div>
+      <div id="skillGroups"></div>
+    </div>
+    <div class="skill-art reveal" aria-hidden="true">
+      <div class="glass-code"><span>&lt;code&gt;</span><span>learn()</span><span>build()</span><span>repeat()</span><span>&lt;/code&gt;</span></div>
+      <div class="glass-logo">NG</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="contact-grid">
+    <div class="contact-copy">
+      <p class="kicker reveal">// CONTACT</p>
+      <h2 class="reveal" data-scramble-once>Let's Build Something Great Together</h2>
+      <p class="reveal">I'm always open to new opportunities, collaborations and interesting projects. Feel free to reach out!</p>
+      <div class="c-lines reveal" id="contactLines"></div>
+      <form id="cform" class="c-form reveal" novalidate>
+        <input type="text" id="fCompany" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+        <div class="field"><input type="text" id="fName" required placeholder=" " autocomplete="name"><label for="fName">Name</label></div>
+        <div class="field"><input type="email" id="fEmail" required placeholder=" " autocomplete="email"><label for="fEmail">Email</label></div>
+        <div class="field"><textarea id="fMsg" rows="4" required placeholder=" "></textarea><label for="fMsg">Message</label></div>
+        <button type="submit" class="btn primary magnetic" id="sendBtn">Send a Message
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+      <div class="c-social reveal" id="contactSocial"></div>
+    </div>
+    <div class="contact-art reveal">
+      <div class="globe-stage" aria-label="Holographic globe surrounded by cards showing Nishan's stack and focus areas">
+        <canvas class="globe-canvas" aria-hidden="true"></canvas>
+        <div class="globe-base" aria-hidden="true"></div>
+        <div class="g-card g-term">
+          <span class="g-term-dots"><i></i><i></i><i></i></span>
+          <p class="g-term-line"><span class="g-prompt">&gt;_</span> Building ideas...<br>Turning concepts into<br>real products.<span class="g-caret"></span></p>
+        </div>
+        <div class="g-card g-stack">
+          <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 2 9 5-9 5-9-5z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg> My Stack</h4>
+          <ul>
+            <li><img src="https://cdn.simpleicons.org/html5/E34F26" alt="" loading="lazy" onerror="this.remove()">HTML</li>
+            <li><img src="https://cdn.simpleicons.org/css/1572B6" alt="" loading="lazy" onerror="this.remove()">CSS</li>
+            <li><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="" loading="lazy" onerror="this.remove()">JavaScript</li>
+            <li><svg viewBox="0 0 24 24"><rect width="24" height="24" rx="4.5" fill="#00005B"/><text x="12" y="16.3" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="10" fill="#9999FF">Ae</text></svg>After Effects</li>
+            <li><svg viewBox="0 0 24 24"><rect width="24" height="24" rx="4.5" fill="#00005B"/><text x="12" y="16.3" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="10" fill="#EA77FF">Pr</text></svg>Premiere Pro</li>
+          </ul>
+        </div>
+        <div class="g-card g-mini g-c1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg>
+          <h5>Web Development</h5><p>Build. Deploy. Grow.</p>
+        </div>
+        <div class="g-card g-mini g-c2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 9h4M8 7v4M15 8h.01M18 10h.01M17.3 5H6.7a4.7 4.7 0 0 0-4.6 5.6l1.1 5.6a3 3 0 0 0 5 1.4L10 15h4l1.8 2.6a3 3 0 0 0 5-1.4l1.1-5.6A4.7 4.7 0 0 0 17.3 5z"/></svg>
+          <h5>Gaming</h5><p>Respawn. Retry. Win.</p>
+        </div>
+        <div class="g-card g-mini g-c3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 19l7-7a4.95 4.95 0 1 0-7-7l-7 7v7z"/><path d="m14 6 4 4"/></svg>
+          <h5>Creative Design</h5><p>Ideas to Reality.</p>
+        </div>
+        <div class="g-card g-mini g-c4">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9.5h18V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="m3.6 9.5 1.6-4.9a2 2 0 0 1 2.5-1.3l12.3 3.3a2 2 0 0 1 1.3 2.5l-.4 1.4"/><path d="m8.5 6.3 2.3 2.6M14 7.5l2.3 2.6"/></svg>
+          <h5>Video Editing</h5><p>Cut. Grade. Export.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <picture><source srcset="assets/footer-skyline.webp" type="image/webp"><img class="foot-bg" src="assets/footer-skyline.jpg" alt="" width="1916" height="821" loading="lazy" aria-hidden="true"></picture>
+  <div class="shooting" id="shooting" aria-hidden="true"></div>
+  <div class="foot-inner">
+    <p class="foot-logo">NISHAN GIRI</p>
+    <p class="foot-tag">Build &nbsp;•&nbsp; Create &nbsp;•&nbsp; Learn &nbsp;•&nbsp; Grow</p>
+    <div class="foot-social" id="footSocial"></div>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a>
+      <a href="#skills">Skills</a><a href="#contact">Contact</a>
+      <a href="assets/resume.pdf" download="Nishan-Giri-Resume.pdf">Resume</a>
+    </nav>
+    <p class="foot-copy">© <span id="year">2026</span> NISHAN GIRI. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- modal -->
+<div class="modal" id="projModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="mTitle">
+  <div class="modal-card">
+    <button class="modal-x" id="modalX" aria-label="Close project details"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    <div class="modal-media"><img id="mImg" src="" alt=""></div>
+    <div class="modal-body">
+      <h3 id="mTitle"></h3>
+      <p id="mDesc"></p>
+      <div class="m-block"><b>Problem</b><p id="mProblem"></p></div>
+      <div class="m-block"><b>My Role</b><p id="mRole"></p></div>
+      <div class="m-block"><b>Result</b><p id="mResult"></p></div>
+      <div class="m-block"><b>Tech Stack</b><div class="tags" id="mTags"></div></div>
+      <a id="mLink" class="btn primary sm magnetic" target="_blank" rel="noopener" style="display:none">Open Project
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<!-- command palette -->
+<div class="palette" id="palette" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Quick navigation">
+  <div class="palette-card">
+    <input type="text" id="paletteInput" placeholder="Jump to a section..." aria-label="Jump to a section">
+    <div class="palette-list" id="paletteList"></div>
+  </div>
+</div>
+
+<script src="script.js?v=13f"></script>
+</body>
+</html>
