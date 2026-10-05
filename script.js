@@ -78,7 +78,7 @@ const CONFIG = {
       result:'A complete playable v2.0 with 5 weapons, 4 ships, 7 enemy types plus elites, boss fights every 5 waves, 4 arenas with events, a shop, 12 achievements, and keyboard, mouse and touch controls. No build step or dependencies.',
       learned:'[CONFIRM: one line on what you learned from this project]',
       tags:['HTML5 Canvas','JavaScript','CSS','Web Audio'],
-      link:'https://github.com/nishan9-99/neon-rift', live:'', play:'[CONFIRM: Neon Rift Play now URL (GitHub Pages build)]' },
+      link:'https://github.com/nishan9-99/neon-rift-v2', live:'', play:'[CONFIRM: Neon Rift Play now URL (GitHub Pages build)]' },
     { id:'bioverse', cat:'web', status:'Open source', short:'BioVerse', shots:0, video:false,
       title:'BioVerse: Anatomy Learning App',
       desc:'Full-stack anatomy learning app: interactive organ viewer, quizzes, flashcards, a disease explorer, an AI tutor (works offline) and three physiology lab simulations.',
