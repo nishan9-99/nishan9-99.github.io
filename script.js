@@ -550,7 +550,7 @@ if (!prefersReduced && matchMedia('(min-width:901px)').matches){
         <h3>${esc(p.title)}</h3>
         <p>${esc(p.desc)}</p>
         <div class="tags">${p.tags.slice(0, 4).map(t => `<span>${esc(t)}</span>`).join('')}</div>
-        <div class="proj-foot">${isUrl(p.link)
+        <div class="proj-foot">${p.id === 'neonrift' && isUrl(p.play) ? `<a class="view" href="${p.play}" target="_blank" rel="noopener noreferrer" aria-label="Play Neon Rift (opens in a new tab)">Play</a>` : ''}${isUrl(p.link)
           ? `<a class="view" href="${p.link}" target="_blank" rel="noopener noreferrer" aria-label="${esc(p.short)} on GitHub (opens in a new tab)">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>`
           : `<span class="view soon" aria-disabled="true">Repo coming soon</span>`}
         ${isUrl(p.link) ? `<a class="proj-gh" href="${p.link}" target="_blank" rel="noopener noreferrer" aria-label="${esc(p.short)} on GitHub" tabindex="-1">${ICONS.github}</a>` : ''}</div>
@@ -848,4 +848,3 @@ $('#cform').addEventListener('submit', async e => {
   }
   frame();
 })();
-
