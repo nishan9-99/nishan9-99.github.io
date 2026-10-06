@@ -2,7 +2,7 @@
 
 Personal portfolio of **Nishan Giri** ("Fragger"), a B.E. CSE student at BMS Institute of Technology and Management (BMSIT), Bengaluru. It covers who I am, what I have built, the tools I work with, and how to reach me.
 
-**Live site:** https://nishan9-99.github.io/
+**Live site:** https://nishan.is-a.dev/
 
 Built with plain HTML, CSS and JavaScript. No framework, no build step, no dependencies to install.
 
